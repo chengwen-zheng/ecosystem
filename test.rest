@@ -1,0 +1,23 @@
+
+
+### get user request
+GET http://localhost:8080/user
+
+
+### update user request
+PATCH  http://localhost:8080/user
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "skills": ["Java", "Spring", "Hibernate"]
+}
+
+### invalid request
+PATCH  http://localhost:8080/user
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "skills": "Java"
+}
